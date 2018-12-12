@@ -1,0 +1,23 @@
+{
+  "name": "wxcomponents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp --gulpfile build/dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peigenzi/wxcomponents.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peigenzi/wxcomponents/issues"
+  },
+  "homepage": "https://github.com/peigenzi/wxcomponents#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
