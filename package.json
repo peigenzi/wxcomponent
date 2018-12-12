@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp --gulpfile build/dev.js"
+    "dev": "gulp --gulpfile build/dev.js",
+    "build": "gulp --gulpfile build/prod.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/peigenzi/wxcomponents#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
   }
 }

@@ -1,0 +1,15 @@
+<view>
+  <v-switch checked='{{sync.checked}}'
+            bind:change='syncChange'></v-switch>
+</view>
+
+<view>
+  <v-switch checked='{{async.checked}}'
+            loading='{{async.loading}}'
+            bind:change='asyncChange'></v-switch>
+</view>
+
+<view>
+  <v-switch disabled='{{true}}'
+            checked='{{true}}'></v-switch>
+</view>
