@@ -1,11 +1,15 @@
-<view class="v-class v-switch v-switch--{{checked ? 'on': 'off'}} {{disabled ? 'v-switch--disabled' : ''}} {{loading ? 'v-switch--loading' : ''}}"
-      checked="{{checked}}"
-      loading="{{loading}}"
-      disabled="{{disabled}}"
-      bindtap="handleSwitchChange">
+<view
+  class="v-class v-switch v-switch--{{checked ? 'on': 'off'}} {{disabled ? 'v-switch--disabled' : ''}} {{loading ? 'v-switch--loading' : ''}}"
+  checked="{{checked}}"
+  loading="{{loading}}"
+  disabled="{{disabled}}"
+  bindtap="handleSwitchChange"
+>
   <view class="v-switch__circle">
-    <view hidden="{{!loading}}"
-          class="v-switch__loading"></view>
+    <view
+      hidden="{{!loading}}"
+      class="v-switch__loading"
+    ></view>
   </view>
   <view class="v-switch__bg"></view>
 </view>

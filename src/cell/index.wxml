@@ -1,0 +1,37 @@
+<view
+  catchtap="cellTap"
+  class="v-class v-cell {{isLink ? 'v-cell--access' : ''}} {{noBorder ? 'no-border' : ''}} {{isLastCell ? 'last-cell' : ''}}"
+>
+
+  <view class="v-cell__icon">
+    <slot name="icon"></slot>
+  </view>
+
+  <view
+    class="v-cell__title"
+    style="width:{{titleWidth}}"
+  >
+    <view
+      wx:if="{{title}}"
+      class="v-cell__text"
+    >{{title}}</view>
+    <view
+      wx:if="{{label}}"
+      class="v-cell__desc"
+    >{{label}}</view>
+  </view>
+
+  <view class="v-cell__bd">
+    <slot></slot>
+  </view>
+
+  <view
+    bindtap="footerTap"
+    class="v-cell__ft"
+  >
+    <block wx:if="{{value}}">{{value}}</block>
+    <block wx:else>
+      <slot name="footer"></slot>
+    </block>
+  </view>
+</view>
