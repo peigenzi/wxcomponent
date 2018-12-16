@@ -1,0 +1,18 @@
+<view class="moment-root">
+  <button
+    class="btn-share"
+    bindtap="shareMemontListener"
+  >点击生成图片</button>
+  <canvas class="canvas" canvas-id="myCanvas" style="height:{{ canvasHeight }}px"></canvas>
+
+  <view class="share-model" wx:if="{{realShow}}">
+    <view class="mask" bindtap="hideDialog"></view>
+    <view class="share-content">
+      <image class="share-image" style="width:{{imageWidht}}px;height:{{imageHeight}}px" src="{{targetSharePath}}"></image>
+      <button class="btn-save-local" bindtap="saveImageTap">保存</button>
+    </view>
+    <view class="close-wrapper" bindtap="closeModal">
+      x
+    </view>
+  </view>
+</view>

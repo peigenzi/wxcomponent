@@ -14,6 +14,20 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const stringNum = (tar, num = 5) => {
+  if(tar && tar.length > num) {
+    tar = tar.trim();
+    if(!tar) {
+      return '匿名';
+    } else {
+      return tar.slice(0, num) + '...';
+    }
+  }
+
+  return tar;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  stringNum: stringNum
 }

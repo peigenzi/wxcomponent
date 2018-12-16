@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/qrcode/index",
+    "pages/canvas/index",
     "pages/switch/index",
     "pages/index/index"
   ],

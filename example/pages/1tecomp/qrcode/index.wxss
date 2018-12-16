@@ -1,0 +1,6 @@
+/* pages/1tecomp/qrcode/index.wxss */
+.canvas-box {
+  position: fixed;
+  top: 999999rpx;
+  left: 0;
+}
