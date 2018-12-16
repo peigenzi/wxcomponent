@@ -109,3 +109,27 @@ export const upload = {
     });
   }
 };
+
+//顺序处理函数
+function sequenceTasks(tasks) {
+  //记录返回值
+  function recordValue(results, value) {
+    results.push(value);
+    return results;
+  }
+
+  let pushValue = recordValue.bind(null, []);
+  let promise = Promise.resolve();
+
+  // 处理tasks数组中的每个函数对象
+  for (let i = 0; i < tasks.length; i++) {
+    let task = tasks[i];
+    promise = promise.then(task).then(pushValue);
+  }
+
+  return promise;
+}
+
+// sequenceTasks(promiseFuncArr).then(result => {
+//   //对返回的result数组进行处理
+// });
