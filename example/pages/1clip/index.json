@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-clip": "../1tecomp/clip/cropper"
+  }
+}

@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/1clip/index",
     "pages/1canvas/index",
     "pages/1upload/index",
     "pages/qrcode/index",
-    
     "pages/switch/index",
     "pages/index/index"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
